@@ -1,6 +1,6 @@
-# AI/ML - Updated for Python 3.13 compatibility
+# AI/ML - Compatible with Python 3.13
 torch==2.5.1
-torchvision==0.20.1
+torchvision==0.21.0
 numpy==1.26.4
 pandas==2.2.0
 scikit-learn==1.4.0
