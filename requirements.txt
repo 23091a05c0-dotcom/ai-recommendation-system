@@ -1,6 +1,6 @@
 # AI/ML - CPU-only for faster deployment (Python 3.13 compatible)
-# Using latest versions that support Python 3.13
---index-url https://download.pytorch.org/whl/cpu
+# Using extra-index-url to access both PyTorch CPU wheels and PyPI
+--extra-index-url https://download.pytorch.org/whl/cpu
 torch==2.5.0+cpu
 numpy>=1.26.0
 pandas>=2.1.0
