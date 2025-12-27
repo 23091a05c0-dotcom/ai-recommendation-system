@@ -4,6 +4,10 @@ __pycache__/
 *$py.class
 *.so
 .Python
+env/
+venv/
+.venv/
+ENV/
 build/
 develop-eggs/
 dist/
@@ -20,25 +24,21 @@ wheels/
 .installed.cfg
 *.egg
 
-# Virtual Environment
-.venv/
-venv/
-ENV/
-env/
+# Data files (exclude from Git, download on deployment)
+data/ml-latest-small/
+data/interactions.csv
+data/item_mapping.json
 
-# IDEs
+# Model checkpoints (will be downloaded or generated)
+# models/*.pth
+# models/*.pkl
+
+# IDE
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# Environment variables
-.env
-.env.local
 
 # OS
 .DS_Store
@@ -48,26 +48,6 @@ Thumbs.db
 *.log
 logs/
 
-# Data (keep structure, ignore large files)
-data/*.csv
-data/*.zip
-data/*.parquet
-!data/ml-latest-small/
-
-# Models (if using Git LFS, remove this)
-# models/*.pth
-
-# Airflow
-airflow.db
-airflow.cfg
-logs/
-dags/__pycache__/
-
-# Testing
-.pytest_cache/
-.coverage
-htmlcov/
-
-# Temporary files
-*.tmp
-*.bak
+# Environment
+.env
+.env.local
